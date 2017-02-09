@@ -1,0 +1,432 @@
+/* general */
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/**{
+	box-sizing: border-box;
+}
+*/
+body{
+	position: relative;
+	/*overflow-x: hidden;*/
+}
+
+.float-right{
+	float: right;
+}
+
+.float-left{
+	float: left;
+}
+
+main{
+	margin-left: 200px;
+	padding: 0px;
+	
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+/* header */
+
+header{
+	background-color: #331E38;
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	float: left;
+	color: white;
+	text-align: center;
+}
+
+img[title='main_logo']{
+	width: 130px;
+	margin: 50px 0px;
+}
+
+header > ul{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+header > ul > li{
+	list-style-type: none;
+	line-height: 3em;
+	border-bottom: 1px solid white;
+}
+
+
+header > ul a:hover{
+	color: yellow;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header > ul li:hover{
+	border-bottom: none;
+}
+
+/* slider/home */
+#slider{
+	background: url(../res/gorilla.jpg) center/cover;
+	height: 700px;
+	color: white;
+	position: relative;
+}
+#slider > #caption-slider{
+	border: 5px solid white;
+	width: 40%;
+	padding:30px;
+	position:absolute;
+	text-align:center;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+#slider h1{
+	margin-top: 0px;
+	font-size: 2em;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+/* about */
+#about{
+	background: linear-gradient(rgba(255, 0, 0, 0.45),rgba(255, 0, 0, 0.45)), url(../res/about.jpg) center/cover;
+	color: white; /*color for about div*/
+	padding: 20px;
+	border-top: 50px;
+	padding-top: 80px;
+}
+
+#about > h1{
+	margin-top: 0px;
+	color: white;
+	font-size: 4em;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#about > div{
+	width: 500px;
+}
+
+
+/* services */
+#services{
+	background-color: #423d2d;
+	/*height: 300px;*/
+	padding: 20px;
+
+}
+#services h1{
+		color: #9C9681;
+		font-weight:normal;
+		font-size: 4em;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		text-transform: uppercase;
+}
+.services-contents{
+	width: 30%;
+	float: left;
+	margin: 30px 10px;
+	/*font-size: 1.5vw;*/
+}
+.services-contents #contents1{
+	background:url(../res/service1.svg) top left no-repeat;
+	background-size: 50px
+}
+
+.services-contents #contents2{
+	background:url(../res/service2.svg) top left no-repeat ;
+	background-size: 50px;
+}
+.services-contents #contents3{
+	background:url(../res/service3.svg) top left no-repeat;
+	background-size: 50px
+}
+.services-contents .services-content-comment{
+	margin-left: 60px;
+}
+
+.services-contents .pink-heading{
+	margin: 0px;
+	color:salmon;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: capitalize;
+	margin-left: 60px;
+}
+.services-content-comment{
+	font-size: 0.8em;
+	color: white;
+	line-height: 1.2em;
+}
+
+
+/* projects */
+#projects{
+	height: 300px;
+	background: url(../res/projectsbg.jpg) center/cover;
+	color: white;
+}
+
+#projects > div{
+	width: 500px;
+	padding: 20px;
+}
+
+#projects h1{
+	margin-top: 0px;
+	color: white;
+	font-size: 4em;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+	
+}
+
+/* gallery */
+#gallery{
+	background-color: #B5B4C7;
+	height: auto;
+	color: white;
+	padding: 20px 0px 0px 20px;
+}
+
+#gallery > .container{
+	width: 23%;
+	float: left;
+	padding: 20px 0px;
+	margin: 0px 10px; 
+}
+
+#gallery > .container > img{
+	width: 100%;
+	border-radius: 3px;
+}
+
+#gallery > .container > h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #585671;
+	font-size: 1.5em bold;
+	text-transform: capitalize;
+}
+
+#gallery > .container p{
+	/*font-size: 1.2vw;*/
+	line-height: 1.2em;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+
+
+/*contact */
+#contact{
+	height: 200px;
+	background: url(../res/contact-bg.jpeg) center/cover;
+	background-repeat: no-repeat;
+	color: white;
+	text-align:right;
+	padding: 0 20px;
+	font-weight: normal;
+	
+}	
+
+#contact h1 {
+	text-transform: uppercase;
+	margin: 0px;
+	font-size: 4em;
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding-top: 20px;
+}
+
+
+
+ /*footer */
+footer{
+	background-color: #C2095A;
+	font-size: 0.8em;
+	margin-left: 200px;
+}
+
+.footer-1 {
+	position:relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer-2 >img {
+	position: relative;
+	text-align: right;
+	padding: 5px;
+	box-sizing: none;
+
+}
+.footer-2 {
+	text-align: right;
+	float: right;
+	display: inline-block;
+}
+
+
+
+ /*media queries */
+ /* preferred max-width is 1250px*/
+@media screen and (max-width: 960px){
+
+	#slider #caption-slider{
+		width: 70%;
+	}
+
+	#about > div{
+		width: 100%;
+		height:  100%;
+
+	}
+
+	#services .services-contents{
+		float: none;
+		width: 100%;
+	}
+
+	#services .left{
+		width: 10%;
+	}
+
+	#services .right{
+		text-align: left;
+	}
+
+	#projects, #projects *{
+		box-sizing: border-box;
+	}
+
+	#projects div{
+		width: 100%;
+	}
+
+	#gallery{
+		padding: 0px 20px;
+	}
+
+	#gallery .container{
+		float: none;
+		width: 100%;
+		margin: 0px;
+
+	}
+
+	#contact *{
+		text-align: center;
+		padding: 0px 20px;
+		box-sizing: border-box;
+	}
+	#contact h1{
+		font-size: 5vw;
+	}
+	#contact p{
+		font-size: 2.5vw;
+	}
+
+	footer{
+		margin-left: 200px;
+		text-align: center;
+	}
+
+	.footer-2{
+		padding-top: 20px;	
+		float: none;
+	}
+
+}
+
+@media screen and (max-width: 420px){
+	header{
+		background-color: #331E38;
+		position: relative;
+		width: 100%;
+		float: none;
+		padding: 10px;
+	}
+
+	img[title='main_logo']{
+		width: 50px;
+		margin: 5px;
+	}
+
+	header ul{
+		text-align: left;
+	}
+
+
+
+	main{
+		float: none;
+		width: 100%;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+
+	#slider #caption-slider{
+		width: 70%;
+	}
+
+	#slider h1{
+		font-size: 5vw;
+	
+	}
+
+	#slider p{
+		font-size: 3vw;
+	}
+
+	#about{
+		background: linear-gradient(rgba(255, 0, 0, 0.45),rgba(255, 0, 0, 0.45)), url(../res/about.jpg) center/cover;
+		font-size: 3vw;
+	}
+
+	#services h1, #about h1, #projects h1, #contact h1{
+		font-size: 9vw;
+	}
+
+	#projects p{
+		font-size: 4vw;
+	}
+
+	#gallery p{
+		font-size: 4vw;
+	}
+
+	#contact p{
+		font-size: 4vw;
+	}
+
+	footer{
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.footer-2{
+		padding-top: 20px;	
+		float: none;
+	}
+}
+
+*{
+	/*border: 1px green solid;*/
+}
